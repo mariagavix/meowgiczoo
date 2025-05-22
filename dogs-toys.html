@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Игрушки для собак | Meowgic Zoo</title>
+  <link rel="stylesheet" href="meowgic-style.css" />
+  <link rel="stylesheet" href="dogs-style.css" />
+
+   
+</head>
+<body class="dogs-theme">
+  <header>
+    <div id="google_translate_element"></div>
+    <div class="logo-container">
+      <a href="meowgic-home.html"><img src="assets/logo.png" alt="Meowgic Zoo Logo" class="logo" /></a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="meowgic-home.html">Главная</a></li>
+        <li><a href="dogs-toys.html" class="active">Собаки → Игрушки</a></li>
+        <li><a href="dogs-carriers.html">Переноски</a></li>
+        <li><a href="dogs-food.html">Корма</a></li>
+        <div id="cart-icon" onclick="toggleCart()">🛒 <span id="cart-count">0</span></div>
+
+
+        <div id="cart" style="display: none;">
+  <h3>Корзина</h3>
+  <ul id="cart-items"></ul>
+  <p id="cart-total">Итого: 0 ₸</p>
+  <button onclick="clearCart()">Очистить корзину</button>
+</div>
+
+        
+
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="category-header">
+      <h1>Игрушки для собак</h1>
+      <p>Каждая игрушка наполнена магией — достаточно взять с собой, чтобы началось приключение!</p>
+    </section>
+
+    <section class="product-grid">
+      <div class="product-card magic-hover">
+        <img src="assets/dog-toy1.jpg" alt=" Шар судьбы" />
+        <h3>Шар судьбы</h3>
+        <p>Прыгучий, как настроение в день полнолуния!</p>
+        <span class="price">1 500 ₸</span>
+<button onclick="addToCartFromCard(this)">Добавить в корзину</button>
+
+
+      </div>
+      <div class="product-card magic-hover">
+        <img src="assets/dog-toy2.jpg" alt="Кусатель времени" />
+        <h3>Кусатель времени</h3>
+        <p>Писк, который замедляет время и радует пёсика!</p>
+        <span class="price">1 900 ₸</span>
+       <button onclick="addToCartFromCard(this)">Добавить в корзину</button>
+
+      </div>
+      <div class="product-card magic-hover">
+        <img src="assets/dog-toy3.jpg" alt="Летающая косточка" />
+        <h3>Летающая косточка</h3>
+        <p>Брошенная — улетает в магический вихрь восторга!</p>
+        <span class="price">15 000 ₸</span>
+        <button onclick="addToCartFromCard(this)">Добавить в корзину</button>
+
+
+      </div>
+    </section>
+  </main>
+
+   <footer class="site-footer">
+  <div class="footer-content">
+    <h4>Meowgic Zoo — Магический зоомагазин</h4>
+    <p>Адрес: ул. Волшебная, 13, г. Алматы, Казахстан</p>
+    <p>Телефон: +7 (777) 123-45-67</p>
+    <p>Email: info@meowgiczoo.kz</p>
+    <p>Время работы: Пн–Вс, 09:00 – 21:00</p>
+    <p>Следите за нами:
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a> |
+      <a href="#">TikTok</a>
+    </p>
+    <p>&copy; 2025 Meowgic Zoo. Все права защищены.</p>
+  </div>
+</footer>
+
+
+    <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'ru', // язык оригинала
+      includedLanguages: 'en,kk,ru', // языки перевода (английский, казахский, русский)
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+
+
+<script src="cart.js"></script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
+

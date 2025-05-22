@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Игрушки для птиц | Meowgic Zoo</title>
+  <link rel="stylesheet" href="meowgic-style.css" />
+  <link rel="stylesheet" href="cats-style.css" />
+</head>
+<body class="birds-theme">
+  <header>
+    <div id="google_translate_element"></div>
+    <div class="logo-container">
+      <a href="meowgic-home.html"><img src="assets/logo.png" alt="Meowgic Zoo Logo" class="logo" /></a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="meowgic-home.html">Главная</a></li>
+        <li><a href="birds-toys.html" class="active">Птицы → Игрушки</a></li>
+        <li><a href="birds-carriers.html">Клетки</a></li>
+        <li><a href="birds-food.html">Корм</a></li>
+        <div id="cart-icon" onclick="toggleCart()">🛒 <span id="cart-count">0</span></div>
+        <div id="cart" style="display: none;">
+  <h3>Корзина</h3>
+  <ul id="cart-items"></ul>
+  <p id="cart-total">Итого: 0 ₸</p>
+  <button onclick="clearCart()">Очистить корзину</button>
+</div>
+
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="category-header">
+      <h1>Игрушки для Птиц</h1>
+      <p>Игрушки, которые разбудят каждое перышко</p>
+    </section>
+
+    <section class="product-grid">
+      <div class="product-card magic-hover">
+        <img src="assets/birds-toy1.jpg" alt="Колокольчик Солнца" />
+        <h3>Колокольчик Солнца</h3>
+        <p>Звонкое волшебство — каждый звук несёт частицу солнечной магии</p>
+        <span class="price">2 650 ₸</span>
+        <button onclick="addToCartFromCard(this)">Добавить в корзину</button>
+      </div>
+      <div class="product-card magic-hover">
+        <img src="assets/birds-toy2.jpg" alt="Загадочное зеркало" />
+        <h3>Загадочное зеркало</h3>
+        <p>Игрушка для тех, кто любит смотреть в отражение собственной души</p>
+        <span class="price">2 800 ₸</span>
+        <button onclick="addToCartFromCard(this)">Добавить в корзину</button>
+      </div>
+      <div class="product-card magic-hover">
+        <img src="assets/birds-toy3.jpg" alt="Танец перьев" />
+        <h3>Танец перьев</h3>
+        <p>Легкая, как воздух, игрушка, вызывающая магические пляски в воздухе</p>
+        <span class="price">1 700 ₸</span>
+        <button onclick="addToCartFromCard(this)">Добавить в корзину</button>
+      </div>
+    </section>
+  </main>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <h4>Meowgic Zoo — Магический зоомагазин</h4>
+    <p>Адрес: ул. Волшебная, 13, г. Алматы, Казахстан</p>
+    <p>Телефон: +7 (777) 123-45-67</p>
+    <p>Email: info@meowgiczoo.kz</p>
+    <p>Время работы: Пн–Вс, 09:00 – 21:00</p>
+    <p>Следите за нами:
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a> |
+      <a href="#">TikTok</a>
+    </p>
+    <p>&copy; 2025 Meowgic Zoo. Все права защищены.</p>
+  </div>
+</footer>
+
+
+    <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'ru', // язык оригинала
+      includedLanguages: 'en,kk,ru', // языки перевода (английский, казахский, русский)
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script src="cart.js"></script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

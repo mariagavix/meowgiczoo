@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ветаптека | Meowgic Zoo</title>
+  <link rel="stylesheet" href="meowgic-style.css" />
+  <link rel="stylesheet" href="cats-style.css" />
+   
+
+</head>
+<body class="cats-theme">
+  <header>
+    <div id="google_translate_element"></div>
+    <div class="logo-container">
+      <a href="meowgic-home.html"><img src="assets/ветклиника.png" alt="Meowgic Zoo Logo" class="logo" /></a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="meowgic-home.html">Главная</a></li>
+        <div id="cart-icon" onclick="toggleCart()">🛒 <span id="cart-count">0</span></div>
+        <div id="cart" style="display: none;">
+  <h3>Корзина</h3>
+  <ul id="cart-items"></ul>
+  <p id="cart-total">Итого: 0 ₸</p>
+  <button onclick="clearCart()">Очистить корзину</button>
+</div>
+ </nav>
+  </header>
+
+  <main>
+    <section class="category-header">
+      <h1>Ветаптека</h1>
+      <p>Помоги своему пушистому другу быть всегда здоровым!</p>
+    </section>
+
+    <section class="product-grid">
+      <div class="product-card magic-hover">
+        <img src="assets/проплан.jpg" alt="проплан" />
+        <h3>Пищевая добавка Pro Plan Veterinary Diets Forti Flora </h3>
+        <p>Пищевая добавка Pro Plan Veterinary Diets Forti Flora для котят и кошек для нормализации микрофлоры желудочно-кишечного тракта. </p>
+        <span class="price">400 ₸</span>
+        <button onclick="addToCartFromCard(this)">Добавить в корзину</button>
+   
+      </div>
+      <div class="product-card magic-hover">
+        <img src="assets/бравекто.jpg" alt="бравекто" />
+        <h3>Бравекто</h3>
+        <p>Бравекто жевательная таблетка для собак (4,5-10 кг) для защиты собак от клещей и блох.</p>
+        <span class="price">15 800 ₸</span>
+        <button onclick="addToCartFromCard(this)">Добавить в корзину</button>
+      </div>
+      <div class="product-card magic-hover">
+        <img src="assets/селафорт.jpg" alt="селафорт" />
+        <h3>Селафорт</h3>
+        <p>Селафорт защита от внешних и внутренних паразитов для для кошек 2,6-7,5 кг.</p>
+        <span class="price">3050 ₸</span>
+        <button onclick="addToCartFromCard(this)">Добавить в корзину</button>
+      </div>
+
+      <div class="product-card magic-hover">
+        <img src="assets/рыбки.jpg" alt="рыбки" />
+        <h3>TetraRubin (хлопья)</h3>
+        <p>TetraRubin (хлопья) для улучшения окраса всех видов рыб</p>
+        <span class="price">950 ₸</span>
+        <button onclick="addToCartFromCard(this)">Добавить в корзину</button>
+      </div>
+    </section>
+  </main>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <h4>Meowgic Zoo — Магический зоомагазин</h4>
+    <p>Адрес: ул. Волшебная, 13, г. Алматы, Казахстан</p>
+    <p>Телефон: +7 (777) 123-45-67</p>
+    <p>Email: info@meowgiczoo.kz</p>
+    <p>Время работы: Пн–Вс, 09:00 – 21:00</p>
+    <p>Следите за нами:
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a> |
+      <a href="#">TikTok</a>
+    </p>
+    <p>&copy; 2025 Meowgic Zoo. Все права защищены.</p>
+  </div>
+</footer>
+
+
+    <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'ru', 
+      includedLanguages: 'en,kk,ru', 
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script src="cart.js"></script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

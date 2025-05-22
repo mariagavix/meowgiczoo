@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Лежанки для кошек | Meowgic Zoo</title>
+  <link rel="stylesheet" href="meowgic-style.css" />
+  <link rel="stylesheet" href="cats-style.css" />
+</head>
+<body class="cats-theme">
+  <header>
+    <div id="google_translate_element"></div>
+    <div class="logo-container">
+      <a href="meowgic-home.html"><img src="assets/logo.png" alt="Meowgic Zoo Logo" class="logo" /></a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="meowgic-home.html">Главная</a></li>
+        <li><a href="cats-beds.html" class="active">Кошки → Лежанки</a></li>
+        <li><a href="cats-toys.html">Игрушки</a></li>
+        <li><a href="cats-food.html">Корм</a></li>
+        <div id="cart-icon" onclick="toggleCart()">🛒 <span id="cart-count">0</span></div>
+      <div id="cart" style="display: none;">
+  <h3>Корзина</h3>
+  <ul id="cart-items"></ul>
+  <p id="cart-total">Итого: 0 ₸</p>
+  <button onclick="clearCart()">Очистить корзину</button>
+</div>
+
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="category-header">
+      <h1>Лежанки для кошек</h1>
+      <p>Мягкие порталы в царство снов, где даже Чеширский кот бы остался.</p>
+    </section>
+
+    <section class="product-grid">
+      <div class="product-card magic-hover">
+        <img src="assets/cat-bed1.jpg" alt="Розовое облако" />
+        <h3>Розовое облако</h3>
+        <p>Настолько пушистая, что кошка забывает, как мяукать от восторга.</p>
+        <span class="price">14 300 ₸</span>
+        <button onclick="addToCartFromCard(this)">Добавить в корзину</button>
+      </div>
+      <div class="product-card magic-hover">
+        <img src="assets/cat-bed2.jpg" alt="Зефирная нора" />
+        <h3>Зефирная нора</h3>
+        <p>Секретный портал в мир снов и ласки.</p>
+        <span class="price">12 800 ₸</span>
+        <button onclick="addToCartFromCard(this)">Добавить в корзину</button>
+      </div>
+      <div class="product-card magic-hover">
+        <img src="assets/cat-bed3.jpg" alt="Плюшевый зайчик" />
+        <h3>Шляпа</h3>
+        <p>Даже Шляпник сказал бы: «Это слишком уютно!»</p>
+        <span class="price">19 500 ₸</span>
+        <button onclick="addToCartFromCard(this)">Добавить в корзину</button>
+      </div>
+    </section>
+  </main>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <h4>Meowgic Zoo — Магический зоомагазин</h4>
+    <p>Адрес: ул. Волшебная, 13, г. Алматы, Казахстан</p>
+    <p>Телефон: +7 (777) 123-45-67</p>
+    <p>Email: info@meowgiczoo.kz</p>
+    <p>Время работы: Пн–Вс, 09:00 – 21:00</p>
+    <p>Следите за нами:
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a> |
+      <a href="#">TikTok</a>
+    </p>
+    <p>&copy; 2025 Meowgic Zoo. Все права защищены.</p>
+  </div>
+</footer>
+
+
+    <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'ru', 
+      includedLanguages: 'en,kk,ru', 
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script src="cart.js"></script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
